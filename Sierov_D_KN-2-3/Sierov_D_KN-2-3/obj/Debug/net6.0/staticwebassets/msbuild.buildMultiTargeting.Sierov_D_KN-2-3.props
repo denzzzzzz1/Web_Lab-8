@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Sierov_D_KN-2-3.props" />
+</Project>

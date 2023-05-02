@@ -1,0 +1,31 @@
+﻿@model Account;
+@{
+    ViewData["Title"] = "Verification";
+}
+
+<div class="VerificationBlock">
+    <h1>Verification</h1>
+    <form method="post" asp-controller="Verification" asp-action="Check">
+        <div class="EnterBlock">
+            <label asp-for="name"></label>
+            <input class="inp form-control" placeholder="enter your nickname" asp-for="name" />
+            <span asp-validation-for="name"></span> <br />
+        </div>
+
+        <div class="EnterBlock">
+            <label asp-for="email"></label>
+            <input class="inp form-control" placeholder="enter your email" asp-for="email" />
+            <span asp-validation-for="email"></span> <br />
+        </div>
+        
+        <div class="EnterBlock">
+            <label asp-for="password"></label>
+            <input class="inp form-control" placeholder="enter your password" asp-for="password" />
+            <span asp-validation-for="password"></span> <br />
+        </div>
+
+        <input class="enterBtn btn btn-outline-success" type="submit" value="Enter" />
+    </form>
+</div>
+
+
